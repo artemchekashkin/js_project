@@ -10,7 +10,7 @@ function start () {
         money = +prompt("Ваш бюджет на месяц?");
     }
 }
-start();
+/* start(); */
 
 let appData = {
     budjet: money,
@@ -18,7 +18,7 @@ let appData = {
     expenses: {},
     optionalExpenses: {},
     income: [],
-    savings: true
+    savings: false
 };
 
 function chooseExpenses() {
@@ -66,6 +66,7 @@ if  ( typeof(a) === 'string' && typeof(b) === 'string' && typeof(a) != null && t
 }
 }
 while (i < 2); */
+
 function detectDayBudget(){
     appData.moneyPerDay = (appData.budjet / 30).toFixed();
     alert("Ваш бюджет на день " + appData.moneyPerDay);
@@ -84,6 +85,10 @@ function detectLevel() {
 detectLevel();
 
 function checkSavings(){
+    let haveSavings = confirm("Есть сбережения");
+    if (haveSavings) {
+        appData.savings = true;
+    }
     if (appData.savings == true) {
         let save = +prompt("Какова сумма накоплений?"),
             percent = +prompt("Под какой процент?");
@@ -102,3 +107,4 @@ function chooseOptExpenses() {
     }
 };
 chooseOptExpenses();
+
