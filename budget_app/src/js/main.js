@@ -31,7 +31,7 @@ let money, time;
 
 expensesItemBtn.disabled = true;
 optionalexpensesBtn.disabled = true;
-optionalexpensesBtn.disabled = true;
+countBudgetBtn.disabled = true;
 
 startBtn.addEventListener('click', function() {
     time = prompt("Введите дату в формате YYYY-MM-DD");
@@ -49,7 +49,7 @@ startBtn.addEventListener('click', function() {
 
     expensesItemBtn.disabled = false;
     optionalexpensesBtn.disabled = false;
-    optionalexpensesBtn.disabled = false;   
+    countBudgetBtn.disabled = false;   
 
 });
 
