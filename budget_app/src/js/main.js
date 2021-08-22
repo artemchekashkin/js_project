@@ -29,7 +29,7 @@ let startBtn = document.getElementById('start'),
 
 let money, time;
 
-expensesItemBtn.disabled = false;
+expensesItemBtn.disabled = true;
 optionalexpensesBtn.disabled = true;
 optionalexpensesBtn.disabled = true;
 
