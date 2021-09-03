@@ -81,7 +81,6 @@ window.addEventListener('DOMContentLoaded', function() {
         };
     };
     setClock('timer', deadline);
-<<<<<<< HEAD
 
     //modal 
     let more = document.querySelector('.more'),
@@ -113,6 +112,4 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-=======
->>>>>>> d10ee697bb265c007904fbbe497ce2a600091b43
 });
